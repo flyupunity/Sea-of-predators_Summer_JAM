@@ -21,15 +21,24 @@ public class Fish : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == gameObject.name)
         {
             RandomTargetPosition();
         }
+        if (other.gameObject.name == "Dno" || other.gameObject.name == "Border")
+        {
+            RandomTargetPosition();
+        }
     }
     void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.name == gameObject.name)
+        {
+            RandomTargetPosition();
+        }
         if (other.gameObject.name == "Dno" || other.gameObject.name == "Border")
         {
             RandomTargetPosition();

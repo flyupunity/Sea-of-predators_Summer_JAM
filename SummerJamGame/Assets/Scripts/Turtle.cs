@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,12 +6,13 @@ public class Turtle : MonoBehaviour
 {
 	public float Speed;
     public Transform target;
+
     bool Player = false;
     Transform PlayerT;
 
     void Awake(){
 		Player = false;
-	}
+    }
 
 	void Update (){
 
@@ -38,9 +40,15 @@ public class Turtle : MonoBehaviour
         }
 		
 	}
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == gameObject.name)
+        {
+            RandomTargetPosition();
+
+        }
+        if (other.gameObject.name == "Dno" || other.gameObject.name == "Border")
         {
             RandomTargetPosition();
         }
@@ -51,9 +59,14 @@ public class Turtle : MonoBehaviour
         {
             RandomTargetPosition();
         }
+        if (other.gameObject.name == gameObject.name)
+        {
+            RandomTargetPosition();
+        }
     }
+
     private void RandomTargetPosition()
     {
-        target.position = new Vector2(Random.Range(-8f, 7), Random.Range(-10f, 60f));
+        target.position = new Vector2(Random.Range(-16f, 25), Random.Range(-3f, 30f));
     }
 }
