@@ -9,13 +9,13 @@ C:\unity_flyup\2021.3.21f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker4
+AssetImportWorker7
 -projectPath
 C:/Users/1/Desktop/Unity/Repository-GameSummer_JAM/SummerJamGame
 -logFile
-Logs/AssetImportWorker4.log
+Logs/AssetImportWorker7.log
 -srvPort
-60492
+54685
 Successfully changed project path to: C:/Users/1/Desktop/Unity/Repository-GameSummer_JAM/SummerJamGame
 C:/Users/1/Desktop/Unity/Repository-GameSummer_JAM/SummerJamGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/1/Desktop/Unity/Repository-GameSummer_JAM/SummerJamGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14936] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 2985544569 [EditorId] 2985544569 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1KV3S04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11552] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 793433091 [EditorId] 793433091 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1KV3S04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14936] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 2985544569 [EditorId] 2985544569 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1KV3S04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11552] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 793433091 [EditorId] 793433091 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1KV3S04) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 260.55 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 247.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.21f1 (1b156197d683)
 [Subsystems] Discovering subsystems at path C:/unity_flyup/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -67,7 +67,7 @@ Initialize mono
 Mono path[0] = 'C:/unity_flyup/2021.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/unity_flyup/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/unity_flyup/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/unity_flyup/2021.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -76,49 +76,49 @@ Register platform support module: C:/unity_flyup/2021.3.21f1/Editor/Data/Playbac
 Register platform support module: C:/unity_flyup/2021.3.21f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/unity_flyup/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/unity_flyup/2021.3.21f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.019757 seconds.
+Registered in 0.017483 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1120 ms
+Android Extension - Scanning For ADB Devices 758 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 249.63 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 196.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.794 seconds
+- Completed reload, in  2.357 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2795ms)
-		BeginReloadAssembly (215ms)
+	ReloadAssembly (2358ms)
+		BeginReloadAssembly (182ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (2338ms)
-			LoadAssemblies (214ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1929ms)
+			LoadAssemblies (180ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (271ms)
+			SetupTypeCache (212ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (1880ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (1567ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1311ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (250ms)
-				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (212ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
+				InitializePlatformSupportModulesInManaged (996ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (197ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.019871 seconds.
+Registered in 0.016786 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\1\Desktop\Unity\Repository-GameSummer_JAM\SummerJamGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\1\Desktop\Unity\Repository-GameSummer_JAM\SummerJamGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -128,46 +128,46 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 349.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 206.20 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.075 seconds
+- Completed reload, in  6.589 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6076ms)
-		BeginReloadAssembly (285ms)
+	ReloadAssembly (6591ms)
+		BeginReloadAssembly (383ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (51ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (5191ms)
-			LoadAssemblies (2347ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (5703ms)
+			LoadAssemblies (2999ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (705ms)
+			SetupTypeCache (913ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (161ms)
-			SetupLoadedEditorAssemblies (1898ms)
+			RebuildScriptCaches (133ms)
+			SetupLoadedEditorAssemblies (1577ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (74ms)
+				InitializePlatformSupportModulesInManaged (64ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (350ms)
-				BeforeProcessingInitializeOnLoad (345ms)
-				ProcessInitializeOnLoadAttributes (891ms)
-				ProcessInitializeOnLoadMethodAttributes (221ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				RefreshPlugins (206ms)
+				BeforeProcessingInitializeOnLoad (217ms)
+				ProcessInitializeOnLoadAttributes (733ms)
+				ProcessInitializeOnLoadMethodAttributes (340ms)
+				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 1.96 seconds
-Refreshing native plugins compatible for Editor in 1.51 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.69 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5209 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (1.3 MB). Loaded Objects now: 5649.
-Memory consumption went from 205.8 MB to 204.6 MB.
-Total: 9.050600 ms (FindLiveObjects: 0.810300 ms CreateObjectMapping: 0.827000 ms MarkObjects: 6.442800 ms  DeleteObjects: 0.968400 ms)
+Unloading 5388 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (1.3 MB). Loaded Objects now: 5827.
+Memory consumption went from 215.6 MB to 214.3 MB.
+Total: 8.643200 ms (FindLiveObjects: 0.604700 ms CreateObjectMapping: 0.406500 ms MarkObjects: 6.484700 ms  DeleteObjects: 1.145400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -181,7 +181,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 114011.759713 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(5d7478c82077fd540a6bb7a270cd4206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(5d7478c82077fd540a6bb7a270cd4206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207fc0b4255c6d1c7678c6b4b96a7bd3') in 0.382252 seconds 
+  Time since last request: 263921.442071 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(d0d611e22e6652a4b93806cc44f4705d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(d0d611e22e6652a4b93806cc44f4705d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7c72bcaeafa310205d139df6082150') in 0.193063 seconds 
