@@ -95,7 +95,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 8466183787080942447}
   - component: {fileID: 8929257972056568035}
   - component: {fileID: 339392399867188530}
+  - component: {fileID: 6296119883205400187}
   m_Layer: 0
   m_Name: Turtle
   m_TagString: Untagged
@@ -360,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e8b9c2cebf2fd499042a76f609c827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 3
   target: {fileID: 4528319099377197084}
 --- !u!50 &8466183787080942447
 Rigidbody2D:
@@ -402,7 +403,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5802004479448679043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -411,6 +412,54 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
+--- !u!60 &6296119883205400187
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802004479448679043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5375, y: 0.8}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.43762085, y: 0.24751434}
+      - {x: -0.5685444, y: -0.11501455}
+      - {x: -0.6682781, y: -0.11612418}
+      - {x: -0.5564977, y: -0.22945154}
+      - {x: -0.7528238, y: -0.23891091}
+      - {x: -0.7592087, y: -0.28982377}
+      - {x: -0.50484276, y: -0.31368446}
+      - {x: -0.35530758, y: -0.2256298}
+      - {x: -0.37368298, y: -0.3183956}
+      - {x: -0.21245193, y: -0.2829044}
+      - {x: -0.18179512, y: -0.2871046}
+      - {x: -0.07310581, y: -0.3823638}
+      - {x: 0.15590096, y: -0.38530302}
+      - {x: 0.36995697, y: -0.3348918}
+      - {x: 0.44358826, y: -0.25333405}
+      - {x: 0.564765, y: -0.15811396}
+      - {x: 0.52847385, y: 0.03464651}
+      - {x: 0.5257044, y: 0.104088545}
+      - {x: 0.7256918, y: 0.12868452}
+      - {x: 0.7657738, y: 0.2810924}
+      - {x: 0.5527868, y: 0.35880733}
+      - {x: 0.45131493, y: 0.32413888}
+      - {x: -0.081026495, y: 0.42434016}
 --- !u!1 &8876992839916981688
 GameObject:
   m_ObjectHideFlags: 0

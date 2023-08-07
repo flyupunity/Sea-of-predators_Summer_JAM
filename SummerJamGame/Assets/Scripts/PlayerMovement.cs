@@ -1,7 +1,6 @@
  using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class PlayerMovement : MonoBehaviour 
 {
@@ -20,12 +19,34 @@ public class PlayerMovement : MonoBehaviour
     public Sprite[] energyEnd;
 
     private Animator anim;
+    //float timer;
+    //public TextMeshProUGUI timerText;
+
+    #region GameOver
+    public GameObject GameOverPanel;
+    #endregion
 
     void Awake(){
 		_rigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        //timer = 180;
     }
     void Update() {
+
+        if (GameObject.FindGameObjectsWithTag("Fish").Length == 0 || GameObject.FindGameObjectsWithTag("Fish").Length == 1)
+        {
+            Win();
+        }
+        /*timer -= 1 * Time.deltaTime;
+        timerText.text = (int)timer + "";
+        if (timer <= 0)
+        {
+            Win();
+        }*/
+        if(Time.timeScale == 0f && GameObject.FindGameObjectWithTag("GGG") != null)
+        {
+            GameObject.FindGameObjectWithTag("GGG").SetActive(false);
+        }
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * walkSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * walkSpeed;
@@ -53,17 +74,12 @@ public class PlayerMovement : MonoBehaviour
             //anim.Play("Idle");
             anim.SetBool("Idle", true);
         }
-    }
-	/*IEnumerator StartEnergy(float timer)
-	{
-        yield return new WaitForSeconds(timer);
-        GetComponent<SpriteRenderer>().sprite = energyStart[0];
-        yield return new WaitForSeconds(timer);
-        GetComponent<SpriteRenderer>().sprite = energyStart[1];
-        yield return new WaitForSeconds(timer);
-        GetComponent<SpriteRenderer>().sprite = energyStart[2];
+        if (Time.timeScale == 0f && GameObject.FindGameObjectWithTag("GGG") != null)
+        {
+            GameObject.FindGameObjectWithTag("GGG").SetActive(false);
+        }
 
-    }*/
+    }
 
     void OnTriggerEnter2D(Collider2D other){
 		if (other.GetComponent<Turtle>()){
@@ -83,15 +99,22 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.GetComponent<Fish>() && Input.GetMouseButton(0))
         {
             anim.Play("UpScale");
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
     }
-	public void GameOver()
+    public void Win()
+    {
+        SceneManager.LoadScene("TheEnd_Win");
+    }
+    public void GameOver()
 	{
-
-	}
+        //Time.timeScale = 0f;
+        GameOverPanel.SetActive(true);
+    }
     public void SetScale(float scale)
     {
         transform.localScale = new Vector3(transform.localScale.x * scale, transform.localScale.y * scale, transform.localScale.x * scale);
+        walkSpeed *= ((scale - 1f) / 2f) + 1;
     }
 }

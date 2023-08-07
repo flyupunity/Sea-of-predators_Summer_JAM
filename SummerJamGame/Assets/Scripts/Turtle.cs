@@ -16,7 +16,7 @@ public class Turtle : MonoBehaviour
 
 	void Update (){
 
-		PlayerT = GameObject.FindGameObjectWithTag("Player").transform;
+		if(GameObject.FindGameObjectWithTag("Player") != null) PlayerT = GameObject.FindGameObjectWithTag("Player").transform;
 
 		if(Player == true){
 
@@ -27,10 +27,10 @@ public class Turtle : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
         }
 		if(Player == false){
-            if (Vector2.Distance(transform.position, PlayerT.position) <= 2f * transform.localScale.y)
+            if (GameObject.FindGameObjectWithTag("Player") != null && Vector2.Distance(transform.position, PlayerT.position) <= 2f * transform.localScale.y)
             {
                 Player = true;
-                Speed *= 2;
+                Speed *= 20;
             }
             GetComponent<Rigidbody2D>().MovePosition(transform.position - transform.right * Time.deltaTime * Speed * -1);
 
